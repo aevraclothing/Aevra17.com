@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aevra — Profil</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <img src="images/logo.png" alt="Logo Aevra" class="brand-logo" />
+        Aevra
+      </a>
+      <nav class="nav">
+        <a href="index.html">Katalog</a>
+        <a href="tentang.html">Tentang</a>
+        <a href="keranjang.html" class="cart-link">
+          Keranjang (<span id="cartCount">0</span>)
+        </a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h1 class="page-title">Profil Aevra</h1>
+      <section class="profile">
+        <img src="images/logo.png" alt="logo" class="profile-logo" />
+        <div>
+          <h2>Aevra — Minimalist Clothing</h2>
+          <p>
+            Aevra didirikan untuk menghadirkan pakaian minimalis berkualitas
+            dengan harga terjangkau. Tim kami terdiri dari desainer lokal yang
+            berfokus pada kenyamanan dan estetika simpel. Dan sistem penjualan
+            kami pre-order
+          </p>
+          <p>
+            <strong>Kontak:</strong> mellboy1703@gmail.com | +62 822-6651-7859
+          </p>
+          <div style="margin-top: 10px">
+            <a
+              href="https://instagram.com/aevra.id"
+              target="_blank"
+              style="margin-right: 10px"
+            >
+              <img
+                src="images/instagram.webp"
+                alt="Instagram"
+                style="height: 25px"
+              />
+            </a>
+            <a href="https://wa.me/6282266517859" target="_blank">
+              <img
+                src="images/WhatsApp.svg.webp"
+                alt="WhatsApp"
+                style="height: 25px"
+              />
+            </a>
+            <a
+              href="https://www.tiktok.com/@aevara.id?_t=ZS-8y87vUkObkl&_r=1"
+              target="_blank"
+            >
+              <img
+                src="images/tiktok.webp"
+                alt="WhatsApp"
+                style="height: 25px"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">&copy; <span id="year"></span> Aevra</footer>
+    <script src="script.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+      updateCartBadge();
+    </script>
+  </body>
+</html>

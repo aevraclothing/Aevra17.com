@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aevera — Katalog</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <img src="images/logo.png" alt="Logo Aevera" class="brand-logo" />
+        Aevra
+      </a>
+      <nav class="nav">
+        <a href="index.html">Katalog</a>
+        <a href="profil.html">Profil</a>
+        <a href="tentang.html">Tentang</a>
+        <a href="keranjang.html" class="cart-link">
+          Keranjang (<span id="cartCount">0</span>)
+        </a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h1 class="page-title">Katalog Produk</h1>
+
+      <div id="productGrid" class="gallery">
+        <!-- Produk akan di-render oleh script.js -->
+      </div>
+    </main>
+
+    <footer class="site-footer">&copy; <span id="year"></span> Aevra</footer>
+
+    <script src="script.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aevra — Keranjang</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <img src="images/logo.png" alt="Logo Aevra" class="brand-logo" />
+        Aevra
+      </a>
+      <nav class="nav">
+        <a href="index.html">Katalog</a>
+        <a href="profil.html">Profil</a>
+        <a href="tentang.html">Tentang</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h1 class="page-title">Keranjang Belanja</h1>
+
+      <section id="cartArea">
+        <!-- Cart items will be rendered by script.js -->
+      </section>
+
+      <section id="checkoutArea" class="checkout hidden">
+        <h2>Checkout</h2>
+        <form id="checkoutForm">
+          <label>Nama lengkap<input name="name" required /></label>
+          <label
+            >Alamat lengkap<textarea
+              name="address"
+              required
+              rows="3"
+            ></textarea>
+          </label>
+          <label
+            >Metode Pembayaran
+            <select name="payment">
+              <option value="bank">Transfer Bank</option>
+              <option value="e-wallet">E-Wallet</option>
+            </select>
+          </label>
+          <div class="checkout-actions">
+            <button type="submit" class="btn">Konfirmasi & Bayar</button>
+            <button type="button" id="cancelCheckout" class="btn ghost">
+              Batal
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <div id="orderSuccess" class="hidden">
+        <h2>Terima kasih!</h2>
+        <p>
+          Anda telah memesan produk kami. Silakan konfirmasi pembayaran anda
+          lanjut melalui WhatsApp. Jika membeli 2 item yang sama tetapi berbeda
+          ukuran harap memberi tahukan kepada seller. Terimakasih...
+        </p>
+      </div>
+    </main>
+
+    <footer class="site-footer">&copy; <span id="year"></span> Aevra</footer>
+    <script src="script.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+      renderCartPage();
+      updateCartBadge();
+    </script>
+  </body>
+</html>

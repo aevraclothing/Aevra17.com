@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aevra — Tentang</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <img src="images/logo.png" alt="Logo Aevra" class="brand-logo" />
+        Aevera
+      </a>
+      <nav class="nav">
+        <a href="index.html">Katalog</a>
+        <a href="profil.html">Profil</a>
+        <a href="keranjang.html" class="cart-link">
+          Keranjang (<span id="cartCount">0</span>)
+        </a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h1 class="page-title">Tentang Kami</h1>
+      <section class="about">
+        <h3>Visi</h3>
+        <p>
+          Menjadi merek pakaian minimalis terpercaya di Indonesia yang
+          mengedepankan kualitas dan kenyamanan.
+        </p>
+        <h3>Misi</h3>
+        <ul>
+          <li>Mendesain pakaian yang tahan lama dan nyaman.</li>
+          <li>Mendukung produksi lokal dan etis.</li>
+          <li>Menyediakan pelayanan pelanggan yang ramah.</li>
+        </ul>
+
+        <h3>Aevra</h3>
+        <p>
+          Aevera hadir untuk mereka yang tidak sekedar memakai pakaian, tapi
+          menyampaikan sikap, untuk yang memilih kualitas, bukan kuantitas dan
+          untuk yang tau abadi tidak pernah mencolok tapi selalu membekas
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">&copy; <span id="year"></span> Aevra</footer>
+    <script src="script.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+      updateCartBadge();
+    </script>
+  </body>
+</html>
