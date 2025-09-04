@@ -297,7 +297,7 @@ function composeOrderMessage(buyer = {}, customCart = null) {
 
   if (entries.length === 0) return null;
 
-  let message = "📦 *PESANAN DARI AEVERA* 📦\n\n";
+  let message = "📦 *PESANAN DARI AVERA* 📦\n\n";
   let total = 0;
 
   // Daftar produk
@@ -429,3 +429,4 @@ document.addEventListener("DOMContentLoaded", function () {
     el.textContent = new Date().getFullYear();
   });
 });
+
